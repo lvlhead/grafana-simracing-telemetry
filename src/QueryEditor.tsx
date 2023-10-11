@@ -9,11 +9,13 @@ import { dirtRallyOptions } from './dirtRallyOptions';
 import { accOptions } from './accOptions';
 import { iRacingOptions } from './iRacingOptions';
 import { forzaHorizonOptions } from './forzaHorizonOptions';
+import { motorsport2023Options } from './motorsport2023Options';
 import { outGaugeOptions } from './outGaugeOptions';
 
 export const sourceOptions = [
   { label: 'DiRT Rally 2.0', value: 'dirtRally2' },
   { label: 'Forza Horizon 5', value: 'forzaHorizon5' },
+  { label: 'Forza Motorsport 2023', value: 'forzaMotorsport2023' }
   { label: 'Assetto Corsa Competizione', value: 'acc' },
   { label: 'iRacing', value: 'iRacing' },
   { label: 'BeamNG Drive', value: 'beamng' },
@@ -59,6 +61,8 @@ export class QueryEditor extends PureComponent<Props> {
       options = accOptions;
     } else if (source === 'forzaHorizon5') {
       options = forzaHorizonOptions;
+    } else if (source === 'forzaMotorsport2023') {
+      options = motorsport2023Options;
     } else if (source === 'iRacing') {
       options = iRacingOptions;
     } else if (source === 'outgauge' || source === 'beamng') {
