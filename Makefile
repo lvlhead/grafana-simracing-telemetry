@@ -12,3 +12,4 @@ build-frontend:
 
 build-backend:
 	mage -v build:windows
+	mage -v build:linux
