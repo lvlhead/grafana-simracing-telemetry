@@ -15,7 +15,7 @@ import { outGaugeOptions } from './outGaugeOptions';
 export const sourceOptions = [
   { label: 'DiRT Rally 2.0', value: 'dirtRally2' },
   { label: 'Forza Horizon 5', value: 'forzaHorizon5' },
-  { label: 'Forza Motorsport 2023', value: 'forzaMotorsport2023' }
+  { label: 'Forza Motorsport 2023', value: 'forzaMotorsport2023' },
   { label: 'Assetto Corsa Competizione', value: 'acc' },
   { label: 'iRacing', value: 'iRacing' },
   { label: 'BeamNG Drive', value: 'beamng' },

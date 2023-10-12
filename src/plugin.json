@@ -61,6 +61,11 @@
       "type": "dashboard",
       "name": "Forza Basic",
       "path": "dashboards/Forza/Forza_Basic.json"
+    },
+    {
+      "type": "dashboard",
+      "name": "Motorsport Basic",
+      "path": "dashboards/Motorsport/Motorsport_Basic.json"
     }
   ],
   "dependencies": {

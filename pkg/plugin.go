@@ -9,7 +9,7 @@ import (
 
 	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/dirtrally"
 	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/forza"
-	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/motorsport"
+	"github.com/lvlhead/grafana-simracing-telemetry/pkg/motorsport"
 
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/instancemgmt"

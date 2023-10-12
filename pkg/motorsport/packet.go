@@ -1,4 +1,4 @@
-package forza
+package motorsport
 
 import (
 	"bytes"
@@ -359,10 +359,10 @@ func convertTelemetryValues(f TelemetryFrame) TelemetryFrameConverted {
 		NormalizedAIBrakeDifference:          f.NormalizedAIBrakeDifference,
 		CarAttitude:                          carAttitude,
 		IsTractionLost:                       isTractionLost,
-		TireWearFrontLeft					  f.TireWearFrontLeft,
-		TireWearFrontRight					  f.TireWearFrontRight,
-		TireWearRearLeft					  f.TireWearRearLeft,
-		TireWearRearRight					  f.TireWearRearRight,
+		TireWearFrontLeft:					  f.TireWearFrontLeft,
+		TireWearFrontRight:					  f.TireWearFrontRight,
+		TireWearRearLeft:					  f.TireWearRearLeft,
+		TireWearRearRight:					  f.TireWearRearRight,
 	}
 	return fC
 }

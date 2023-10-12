@@ -13,7 +13,7 @@ import (
 	iracing "github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/iracing/sharedmemory"
 
 	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/forza"
-	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/motorsport"
+	"github.com/lvlhead/grafana-simracing-telemetry/pkg/motorsport"
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/instancemgmt"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/log"
