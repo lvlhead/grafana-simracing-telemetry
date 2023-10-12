@@ -9,6 +9,7 @@ import (
 
 	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/dirtrally"
 	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/forza"
+	"github.com/lvlhead/grafana-simracing-telemetry/pkg/motorsport"
 
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/instancemgmt"
@@ -159,10 +160,15 @@ func (d *SimracingTelemetryDatasource) RunStream(ctx context.Context, req *backe
 	forzaTelemetryChan := make(chan forza.TelemetryFrame)
 	forzaTelemetryErrorChan := make(chan error)
 
+	motorsportTelemetryChan := make(chan motorsport.TelemetryFrame)
+	motorsportTelemetryErrorChan := make(chan error)
+
 	if req.Path == "dirtRally2" {
 		go dirtrally.RunTelemetryServer(telemetryChan, telemetryErrorChan)
 	} else if req.Path == "forzaHorizon5" {
 		go forza.RunTelemetryServer(forzaTelemetryChan, forzaTelemetryErrorChan)
+	} else if req.Path == "forzaMotorsport2023" {
+		go motorsport.RunTelemetryServer(motorsportTelemetryChan, motorsportTelemetryErrorChan)
 	}
 
 	lastTimeSent := time.Now()
@@ -195,6 +201,20 @@ func (d *SimracingTelemetryDatasource) RunStream(ctx context.Context, req *backe
 			}
 
 			frame := forza.TelemetryToDataFrame(telemetryFrame)
+			lastTimeSent = time.Now()
+			err := sender.SendFrame(frame, data.IncludeAll)
+			if err != nil {
+				log.DefaultLogger.Error("Error sending frame", "error", err)
+				continue
+			}
+
+		case telemetryFrame := <-motorsportTelemetryChan:
+			if time.Now().Before(lastTimeSent.Add(time.Second / 60)) {
+				// Drop frame
+				continue
+			}
+
+			frame := motorsport.TelemetryToDataFrame(telemetryFrame)
 			lastTimeSent = time.Now()
 			err := sender.SendFrame(frame, data.IncludeAll)
 			if err != nil {
