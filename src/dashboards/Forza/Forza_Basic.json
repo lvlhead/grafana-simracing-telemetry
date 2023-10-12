@@ -34,7 +34,6 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -100,7 +99,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -115,7 +114,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -211,7 +210,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -226,7 +225,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -278,7 +277,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -293,7 +292,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -363,7 +362,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -378,7 +377,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -552,7 +551,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -567,7 +566,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -626,7 +625,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -654,7 +653,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "gridPos": {
@@ -686,7 +685,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": true,
@@ -697,7 +696,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": true,
@@ -709,7 +708,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": true,
@@ -731,7 +730,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -801,7 +800,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -812,7 +811,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -824,7 +823,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -840,7 +839,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -906,7 +905,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -921,7 +920,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -993,7 +992,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1008,7 +1007,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -1075,7 +1074,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1090,7 +1089,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -1146,7 +1145,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1161,7 +1160,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -1217,7 +1216,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1232,7 +1231,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -1279,7 +1278,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1294,7 +1293,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -1345,7 +1344,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1360,7 +1359,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -1418,7 +1417,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1446,7 +1445,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -1478,7 +1477,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": true,
@@ -1490,7 +1489,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": true,
@@ -1503,7 +1502,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": true,
@@ -1526,7 +1525,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -1558,7 +1557,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": true,
@@ -1570,7 +1569,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": true,
@@ -1583,7 +1582,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": true,
@@ -1606,7 +1605,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -1668,7 +1667,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1680,7 +1679,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1693,7 +1692,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1709,7 +1708,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -1756,7 +1755,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1772,7 +1771,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -1826,7 +1825,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1838,7 +1837,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1851,7 +1850,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1864,7 +1863,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1900,7 +1899,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -1954,7 +1953,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1966,7 +1965,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1979,7 +1978,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -1992,7 +1991,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2028,7 +2027,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "fieldConfig": {
@@ -2081,7 +2080,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2094,7 +2093,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2107,7 +2106,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2120,7 +2119,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2234,7 +2233,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -2286,7 +2285,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2297,7 +2296,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2309,7 +2308,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2321,7 +2320,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2343,7 +2342,7 @@
     },
     {
       "datasource": {
-        "type": "alexanderzobnin-simracingtelemetry-datasource",
+        "type": "lvlhead-simracingtelemetry-datasource",
         "uid": "${datasource}"
       },
       "description": "",
@@ -2395,7 +2394,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2406,7 +2405,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2418,7 +2417,7 @@
         },
         {
           "datasource": {
-            "type": "alexanderzobnin-simracingtelemetry-datasource",
+            "type": "lvlhead-simracingtelemetry-datasource",
             "uid": "${datasource}"
           },
           "graph": false,
@@ -2456,7 +2455,7 @@
         "multi": false,
         "name": "datasource",
         "options": [],
-        "query": "alexanderzobnin-simracingtelemetry-datasource",
+        "query": "lvlhead-simracingtelemetry-datasource",
         "queryValue": "",
         "refresh": 1,
         "regex": "",

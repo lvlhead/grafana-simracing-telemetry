@@ -5,14 +5,14 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/outgauge"
+	"github.com/lvlhead/grafana-simracing-telemetry/pkg/outgauge"
 	"time"
 
-	acc "github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/acc/sharedmemory"
-	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/dirtrally"
-	iracing "github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/iracing/sharedmemory"
+	acc "github.com/lvlhead/grafana-simracing-telemetry/pkg/acc/sharedmemory"
+	"github.com/lvlhead/grafana-simracing-telemetry/pkg/dirtrally"
+	iracing "github.com/lvlhead/grafana-simracing-telemetry/pkg/iracing/sharedmemory"
 
-	"github.com/alexanderzobnin/grafana-simracing-telemetry/pkg/forza"
+	"github.com/lvlhead/grafana-simracing-telemetry/pkg/forza"
 	"github.com/lvlhead/grafana-simracing-telemetry/pkg/motorsport"
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/instancemgmt"

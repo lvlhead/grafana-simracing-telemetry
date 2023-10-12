@@ -1,4 +1,4 @@
-module github.com/alexanderzobnin/grafana-simracing-telemetry
+module github.com/lvlhead/grafana-simracing-telemetry
 
 go 1.17
 
