@@ -1,0 +1,2950 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 2,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 69,
+      "panels": [],
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+          },
+          "refId": "A"
+        }
+      ],
+      "title": "Car info",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "index": 0,
+                  "text": "No"
+                },
+                "1": {
+                  "index": 1,
+                  "text": "Yes"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 0,
+        "y": 1
+      },
+      "id": 59,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "IsRaceOn",
+          "withStreaming": true
+        }
+      ],
+      "title": "In Race?",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "color": "#32c0d9",
+                  "index": 0,
+                  "text": "D"
+                },
+                "1": {
+                  "color": "yellow",
+                  "index": 1,
+                  "text": "C"
+                },
+                "2": {
+                  "color": "orange",
+                  "index": 2,
+                  "text": "B"
+                },
+                "3": {
+                  "color": "red",
+                  "index": 3,
+                  "text": "A"
+                },
+                "4": {
+                  "color": "purple",
+                  "index": 4,
+                  "text": "S1"
+                },
+                "5": {
+                  "color": "blue",
+                  "index": 5,
+                  "text": "S2"
+                },
+                "6": {
+                  "index": 6,
+                  "text": "S3"
+                },
+                "7": {
+                  "index": 7,
+                  "text": "X"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 2,
+        "x": 3,
+        "y": 1
+      },
+      "id": 57,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "CarClass",
+          "withStreaming": true
+        }
+      ],
+      "title": "Class",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 5,
+        "y": 1
+      },
+      "id": 55,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "CarPerformanceIndex",
+          "withStreaming": true
+        }
+      ],
+      "title": "Performance",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "index": 0,
+                  "text": "FWD"
+                },
+                "1": {
+                  "index": 1,
+                  "text": "RWD"
+                },
+                "2": {
+                  "index": 2,
+                  "text": "AWD"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 8,
+        "y": 1
+      },
+      "id": 58,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "DrivetrainType",
+          "withStreaming": true
+        }
+      ],
+      "title": "Drivetrain",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlPu"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "color": "green",
+                  "index": 0,
+                  "text": "EV"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 11,
+        "y": 1
+      },
+      "id": 52,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "none",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "/^NumCylinders$/",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "NumCylinders",
+          "withStreaming": true
+        }
+      ],
+      "title": "Cylinders",
+      "type": "stat"
+    },
+    {
+      "collapsed": false,
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 3
+      },
+      "id": 65,
+      "panels": [],
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+          },
+          "refId": "A"
+        }
+      ],
+      "title": "Car Data",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "shades"
+          },
+          "mappings": [],
+          "max": 1,
+          "min": -1,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "text",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 2,
+        "x": 0,
+        "y": 4
+      },
+      "id": 46,
+      "maxDataPoints": 2,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true,
+        "text": {
+          "valueSize": 1
+        }
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "Steer",
+          "withStreaming": true
+        }
+      ],
+      "title": "Steering",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 1,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-green",
+                "value": null
+              },
+              {
+                "color": "purple",
+                "value": 0.5
+              },
+              {
+                "color": "red",
+                "value": 0.8
+              }
+            ]
+          },
+          "unit": "percentunit"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 2,
+        "x": 2,
+        "y": 4
+      },
+      "id": 78,
+      "maxDataPoints": 2,
+      "options": {
+        "displayMode": "basic",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "text": {},
+        "valueMode": "color"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "Clutch",
+          "withStreaming": true
+        }
+      ],
+      "title": "Clutch",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 1,
+          "min": 0,
+          "noValue": "0",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-green",
+                "value": null
+              },
+              {
+                "color": "purple",
+                "value": 0.5
+              },
+              {
+                "color": "red",
+                "value": 0.8
+              }
+            ]
+          },
+          "unit": "percentunit"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 2,
+        "x": 4,
+        "y": 4
+      },
+      "id": 70,
+      "maxDataPoints": 2,
+      "options": {
+        "displayMode": "basic",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "text": {},
+        "valueMode": "color"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "Throttle",
+          "withStreaming": true
+        }
+      ],
+      "title": "Throttle",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 1,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-green",
+                "value": null
+              },
+              {
+                "color": "purple",
+                "value": 0.5
+              },
+              {
+                "color": "red",
+                "value": 0.8
+              }
+            ]
+          },
+          "unit": "percentunit"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 2,
+        "x": 6,
+        "y": 4
+      },
+      "id": 71,
+      "maxDataPoints": 2,
+      "options": {
+        "displayMode": "basic",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "text": {},
+        "valueMode": "color"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "Brake",
+          "withStreaming": true
+        }
+      ],
+      "title": "Brake",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "index": 0,
+                  "text": "N"
+                },
+                "-1": {
+                  "index": 1,
+                  "text": "R"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "super-light-yellow",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 2,
+        "x": 8,
+        "y": 4
+      },
+      "id": 4,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "Gear",
+          "withStreaming": true
+        }
+      ],
+      "title": "Gear",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "index": 0,
+                  "text": "OK"
+                },
+                "1": {
+                  "color": "red",
+                  "index": 1,
+                  "text": "Lost"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 10,
+        "y": 4
+      },
+      "id": 61,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "IsTractionLost",
+          "withStreaming": true
+        }
+      ],
+      "title": "Traction lost",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "max": 1,
+          "min": 0,
+          "noValue": "0",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "#EAB839",
+                "value": 40
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percentunit"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 15,
+        "y": 4
+      },
+      "id": 76,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireWearFrontLeft",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireWearFrontRight",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireWearRearLeft",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "D",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireWearRearRight",
+          "withStreaming": true
+        }
+      ],
+      "title": "Tire Wear",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {},
+            "indexByName": {},
+            "renameByName": {
+              "TireTempFrontLeft": "FL",
+              "TireTempFrontRight": "FR",
+              "TireTempRearLeft": "RL",
+              "TireTempRearRight": "RR",
+              "TireWearFrontLeft": "FL",
+              "TireWearFrontRight": "FR",
+              "TireWearRearLeft": "RL",
+              "TireWearRearRight": "RR"
+            }
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "index": 0,
+                  "text": "N"
+                },
+                "-1": {
+                  "index": 1,
+                  "text": "R"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "super-light-yellow",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 5,
+        "x": 19,
+        "y": 4
+      },
+      "id": 82,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "LapNumber",
+          "withStreaming": true
+        }
+      ],
+      "title": "Lap Number",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "index": 0,
+                  "text": "Neutral"
+                },
+                "1": {
+                  "color": "purple",
+                  "index": 1,
+                  "text": "Understeer"
+                },
+                "2": {
+                  "color": "red",
+                  "index": 2,
+                  "text": "Oversteer"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 10,
+        "y": 6
+      },
+      "id": 62,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "CarAttitude",
+          "withStreaming": true
+        }
+      ],
+      "title": "Attitude",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlPu"
+          },
+          "decimals": 0,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "kwatt"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 0,
+        "y": 7
+      },
+      "id": 36,
+      "maxDataPoints": 2,
+      "options": {
+        "displayMode": "basic",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "valueMode": "color"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "Speed",
+          "withStreaming": true
+        }
+      ],
+      "title": "Power",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 0,
+          "mappings": [],
+          "max": 250,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 100
+              },
+              {
+                "color": "red",
+                "value": 200
+              }
+            ]
+          },
+          "unit": "velocitykmh"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 2,
+        "y": 7
+      },
+      "id": 6,
+      "maxDataPoints": 2,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true,
+        "text": {}
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "Speed",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "telemetry": "SpeedKmh",
+          "withStreaming": true
+        }
+      ],
+      "title": "Speed",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "RPM",
+          "mappings": [],
+          "max": 10000,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "text",
+                "value": null
+              },
+              {
+                "color": "blue",
+                "value": 1000
+              },
+              {
+                "color": "red",
+                "value": 6500
+              }
+            ]
+          },
+          "unit": "rotrpm"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "EngineMaxRpm"
+            },
+            "properties": [
+              {
+                "id": "max"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 2,
+        "x": 8,
+        "y": 7
+      },
+      "id": 2,
+      "maxDataPoints": 2,
+      "options": {
+        "displayMode": "lcd",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "text": {},
+        "valueMode": "color"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "CurrentEngineRpm",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": true,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "telemetry": "EngineIdleRpm",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": true,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "telemetry": "EngineMaxRpm",
+          "withStreaming": true
+        }
+      ],
+      "transformations": [],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "dthms"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 5,
+        "x": 19,
+        "y": 7
+      },
+      "id": 80,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "CurrentLap",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "telemetry": "LastLap",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "D",
+          "source": "forzaMotorsport2023",
+          "telemetry": "BestLap",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "telemetry": "CurrentRaceTime",
+          "withStreaming": true
+        }
+      ],
+      "title": "Lap / Race Timer",
+      "transformations": [
+        {
+          "id": "joinByField",
+          "options": {}
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {},
+            "indexByName": {},
+            "renameByName": {
+              "BestLap": "Best Lap",
+              "CurrentLap": "Current Lap",
+              "CurrentRaceTime": "Current Race Time",
+              "LastLap": "Last Lap"
+            }
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "index": 0,
+                  "text": "N"
+                },
+                "-1": {
+                  "index": 1,
+                  "text": "R"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "super-light-yellow",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percentunit"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 15,
+        "y": 8
+      },
+      "id": 81,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "Fuel",
+          "withStreaming": true
+        }
+      ],
+      "title": "Fuel",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlPu"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "forceNm"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 0,
+        "y": 11
+      },
+      "id": 79,
+      "maxDataPoints": 2,
+      "options": {
+        "displayMode": "basic",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "valueMode": "color"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "Torque",
+          "withStreaming": true
+        }
+      ],
+      "title": "Torque",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 15,
+        "y": 11
+      },
+      "id": 8,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireTempFrontLeft",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireTempFrontRight",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireTempRearLeft",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "D",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireTempRearRight",
+          "withStreaming": true
+        }
+      ],
+      "title": "Tire Temperature",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {},
+            "indexByName": {},
+            "renameByName": {
+              "TireTempFrontLeft": "FL",
+              "TireTempFrontRight": "FR",
+              "TireTempRearLeft": "RL",
+              "TireTempRearRight": "RR"
+            }
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "pressurebar"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 0,
+        "y": 15
+      },
+      "id": 10,
+      "maxDataPoints": 2,
+      "options": {
+        "displayMode": "gradient",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "valueMode": "color"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "Boost",
+          "withStreaming": true
+        }
+      ],
+      "title": "Boost",
+      "type": "bargauge"
+    },
+    {
+      "collapsed": false,
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 19
+      },
+      "id": 75,
+      "panels": [],
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+          },
+          "refId": "A"
+        }
+      ],
+      "title": "Detail data",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 0,
+        "y": 20
+      },
+      "id": 50,
+      "maxDataPoints": 2,
+      "options": {
+        "chartStyle": 0,
+        "fillOpacity": 0.4,
+        "followTheme": false,
+        "getOption": "const series = data.series.map((s) => {\n  const sData = s.fields.find((f) => f.type === 'number').values.buffer;\n  const sTime = s.fields.find((f) => f.type === 'time').values.buffer;\n\n  return {\n    name: s.name,\n    type: 'line',\n    showSymbol: false,\n    areaStyle: {\n      opacity: 0.1,\n    },\n    lineStyle: {\n      width: 1,\n    },\n    data: sData.map((d, i) => [sTime[i], d.toFixed(2)]),\n  };\n});\n\nconst axisOption = {\n  axisTick: {\n    show: false,\n  },\n  axisLine: {\n    show: false,\n  },\n  axisLabel: {\n    color: 'rgba(128, 128, 128, .9)',\n  },\n  splitLine: {\n    lineStyle: {\n      color: 'rgba(128, 128, 128, .2)',\n    },\n  },\n};\n\nreturn {\n  backgroundColor: 'transparent',\n  tooltip: {\n    trigger: 'axis',\n  },\n  legend: {\n    left: '0',\n    bottom: '0',\n    data: data.series.map((s) => s.name),\n    textStyle: {\n      color: 'rgba(128, 128, 128, .9)',\n    },\n  },\n  xAxis: Object.assign(\n    {\n      type: 'time',\n    },\n    axisOption\n  ),\n  yAxis: Object.assign(\n    {\n      type: 'value',\n      min: 'dataMin',\n    },\n    axisOption\n  ),\n  grid: {\n    left: 0,\n    right: 16,\n    top: 6,\n    bottom: 24,\n    containLabel: true,\n  },\n  series,\n};",
+        "symbolSize": 3,
+        "xAxis": {
+          "col": 1
+        },
+        "xAxisExtents": {},
+        "yAxis": {
+          "col": 3
+        },
+        "yAxisExtents": {},
+        "zAxis": {
+          "col": 2
+        },
+        "zAxisExtents": {}
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "AngularVelocityX",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "AngularVelocityY",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "AngularVelocityZ",
+          "withStreaming": true
+        }
+      ],
+      "title": "Angular Velocity",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        }
+      ],
+      "type": "bilibala-echarts-panel"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 4,
+        "y": 20
+      },
+      "id": 49,
+      "maxDataPoints": 2,
+      "options": {
+        "chartStyle": 0,
+        "fillOpacity": 0.3,
+        "followTheme": false,
+        "getOption": "const series = data.series.map((s) => {\n  const sData = s.fields.find((f) => f.type === 'number').values.buffer;\n  const sTime = s.fields.find((f) => f.type === 'time').values.buffer;\n\n  return {\n    name: s.name,\n    type: 'line',\n    showSymbol: false,\n    areaStyle: {\n      opacity: 0.1,\n    },\n    lineStyle: {\n      width: 1,\n    },\n    data: sData.map((d, i) => [sTime[i], d.toFixed(2)]),\n  };\n});\n\nconst axisOption = {\n  axisTick: {\n    show: false,\n  },\n  axisLine: {\n    show: false,\n  },\n  axisLabel: {\n    color: 'rgba(128, 128, 128, .9)',\n  },\n  splitLine: {\n    lineStyle: {\n      color: 'rgba(128, 128, 128, .2)',\n    },\n  },\n};\n\nreturn {\n  backgroundColor: 'transparent',\n  tooltip: {\n    trigger: 'axis',\n  },\n  legend: {\n    left: '0',\n    bottom: '0',\n    data: data.series.map((s) => s.name),\n    textStyle: {\n      color: 'rgba(128, 128, 128, .9)',\n    },\n  },\n  xAxis: Object.assign(\n    {\n      type: 'time',\n    },\n    axisOption\n  ),\n  yAxis: Object.assign(\n    {\n      type: 'value',\n      min: 'dataMin',\n    },\n    axisOption\n  ),\n  grid: {\n    left: 0,\n    right: 16,\n    top: 6,\n    bottom: 24,\n    containLabel: true,\n  },\n  series,\n};",
+        "symbolSize": 3,
+        "xAxis": {
+          "col": 1
+        },
+        "xAxisExtents": {},
+        "yAxis": {
+          "col": 3
+        },
+        "yAxisExtents": {},
+        "zAxis": {
+          "col": 2
+        },
+        "zAxisExtents": {}
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "AccelerationX",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "AccelerationY",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "AccelerationZ",
+          "withStreaming": true
+        }
+      ],
+      "title": "Acceleration",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        }
+      ],
+      "type": "bilibala-echarts-panel"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "max": 3,
+          "min": -3,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-yellow"
+              },
+              {
+                "color": "purple",
+                "value": -5
+              },
+              {
+                "color": "super-light-blue",
+                "value": -2
+              },
+              {
+                "color": "#6ED0E0",
+                "value": 2
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 8,
+        "y": 20
+      },
+      "id": 44,
+      "maxDataPoints": 2,
+      "options": {
+        "displayMode": "basic",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "text": {},
+        "valueMode": "color"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "Pitch",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "Yaw",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "Roll",
+          "withStreaming": true
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 3,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          },
+          "unit": "degree"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 8,
+        "y": 22
+      },
+      "id": 53,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireCombinedSlipFrontLeft",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireCombinedSlipFrontRight",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireCombinedSlipRearLeft",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "D",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "TireCombinedSlipRearRight",
+          "withStreaming": true
+        }
+      ],
+      "title": "Tire Slip",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {},
+            "indexByName": {},
+            "renameByName": {
+              "TireCombinedSlipFrontLeft": "FL",
+              "TireCombinedSlipFrontRight": "FR",
+              "TireCombinedSlipRearLeft": "RL",
+              "TireCombinedSlipRearRight": "RR"
+            }
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "decimals": 1,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 0.2
+              }
+            ]
+          },
+          "unit": "cm"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 10,
+        "y": 22
+      },
+      "id": 51,
+      "maxDataPoints": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "SuspensionTravelMetersFrontRight",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "SuspensionTravelMetersFrontLeft",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "SuspensionTravelMetersRearLeft",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "D",
+          "source": "forzaMotorsport2023",
+          "sourceFrom": "$playbackFile",
+          "telemetry": "SuspensionTravelMetersRearRight",
+          "withStreaming": true
+        }
+      ],
+      "title": "Suspension Travel",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "FR",
+            "binary": {
+              "left": "SuspensionTravelMetersFrontRight",
+              "operator": "*",
+              "reducer": "sum",
+              "right": "1000"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "FL",
+            "binary": {
+              "left": "SuspensionTravelMetersFrontLeft",
+              "operator": "*",
+              "reducer": "sum",
+              "right": "1000"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "RL",
+            "binary": {
+              "left": "SuspensionTravelMetersRearLeft",
+              "operator": "*",
+              "reducer": "sum",
+              "right": "1000"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "RR",
+            "binary": {
+              "left": "SuspensionTravelMetersRearRight",
+              "operator": "*",
+              "reducer": "sum",
+              "right": "1000"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            }
+          }
+        },
+        {
+          "id": "filterFieldsByName",
+          "options": {
+            "include": {
+              "names": [
+                "time",
+                "FR",
+                "FL",
+                "RL",
+                "RR"
+              ]
+            }
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 9,
+        "x": 0,
+        "y": 26
+      },
+      "id": 48,
+      "maxDataPoints": 2,
+      "options": {
+        "chartStyle": 1,
+        "fillOpacity": 0.7,
+        "followTheme": false,
+        "getOption": "const series = data.series.map((s) => {\n  const sData = s.fields.find((f) => f.type === 'number').values.buffer;\n  const sTime = s.fields.find((f) => f.type === 'time').values.buffer;\n\n  return {\n    name: s.name,\n    type: 'line',\n    showSymbol: false,\n    areaStyle: {\n      opacity: 0.1,\n    },\n    lineStyle: {\n      width: 1,\n    },\n    data: sData.map((d, i) => [sTime[i], d.toFixed(2)]),\n  };\n});\n\nconst axisOption = {\n  axisTick: {\n    show: false,\n  },\n  axisLine: {\n    show: false,\n  },\n  axisLabel: {\n    color: 'rgba(128, 128, 128, .9)',\n  },\n  splitLine: {\n    lineStyle: {\n      color: 'rgba(128, 128, 128, .2)',\n    },\n  },\n};\n\nreturn {\n  backgroundColor: 'transparent',\n  tooltip: {\n    trigger: 'axis',\n  },\n  legend: {\n    left: '0',\n    bottom: '0',\n    data: data.series.map((s) => s.name),\n    textStyle: {\n      color: 'rgba(128, 128, 128, .9)',\n    },\n  },\n  xAxis: Object.assign(\n    {\n      type: 'time',\n    },\n    axisOption\n  ),\n  yAxis: Object.assign(\n    {\n      type: 'value',\n      min: 'dataMin',\n    },\n    axisOption\n  ),\n  grid: {\n    left: 0,\n    right: 16,\n    top: 6,\n    bottom: 24,\n    containLabel: true,\n  },\n  series,\n};",
+        "symbolSize": 10,
+        "xAxis": {
+          "col": 1
+        },
+        "xAxisExtents": {},
+        "yAxis": {
+          "col": 3
+        },
+        "yAxisExtents": {},
+        "zAxis": {
+          "col": 2
+        },
+        "zAxisExtents": {}
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "PositionX",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "telemetry": "PositionY",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": true,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "telemetry": "PositionZ",
+          "withStreaming": true
+        }
+      ],
+      "title": "Geo Location",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        }
+      ],
+      "type": "bilibala-echarts-panel"
+    },
+    {
+      "collapsed": false,
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 34
+      },
+      "id": 67,
+      "panels": [],
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+          },
+          "refId": "A"
+        }
+      ],
+      "title": "Race info",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 35
+      },
+      "id": 60,
+      "maxDataPoints": 2,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "countRows": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "LapNumber",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "telemetry": "LastLap",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "telemetry": "CurrentLap",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "D",
+          "source": "forzaMotorsport2023",
+          "telemetry": "BestLap",
+          "withStreaming": true
+        }
+      ],
+      "title": "Attitude",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "lvlhead-simracingtelemetry-datasource",
+        "uid": "${datasource}"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 39
+      },
+      "id": 63,
+      "maxDataPoints": 2,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "countRows": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "refId": "A",
+          "source": "forzaMotorsport2023",
+          "telemetry": "DistanceTraveled",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "B",
+          "source": "forzaMotorsport2023",
+          "telemetry": "CurrentRaceTime",
+          "withStreaming": true
+        },
+        {
+          "datasource": {
+            "type": "lvlhead-simracingtelemetry-datasource",
+            "uid": "${datasource}"
+          },
+          "graph": false,
+          "hide": false,
+          "refId": "C",
+          "source": "forzaMotorsport2023",
+          "telemetry": "RacePosition",
+          "withStreaming": true
+        }
+      ],
+      "title": "Attitude",
+      "transformations": [
+        {
+          "id": "merge",
+          "options": {}
+        }
+      ],
+      "type": "table"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "Simracing Telemetry",
+          "value": "bd90555f-ea4f-4af8-94f3-23c3ea86af27"
+        },
+        "hide": 0,
+        "includeAll": false,
+        "multi": false,
+        "name": "datasource",
+        "options": [],
+        "query": "lvlhead-simracingtelemetry-datasource",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Forza Motorsport Fixed",
+  "uid": "adf13928-0619-4cad-8f90-03c1232a05c4",
+  "version": 10,
+  "weekStart": ""
+}
